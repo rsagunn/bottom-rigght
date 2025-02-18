@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 8fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 9fr 1fr;
 }
 
 .logonav {
@@ -11,7 +11,7 @@
 }
 
 .gridbox {
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 2/4;
     background-color: blue;
 }
@@ -37,5 +37,18 @@
 .footer {
     grid-column: 1/4;
     grid-row: 4/5;
-    background-color: black;
+    background-color: red;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+     /* To make our images reaarange if width decreases */
+}
+
+.child {
+    flex: 40%;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 30px
 }
